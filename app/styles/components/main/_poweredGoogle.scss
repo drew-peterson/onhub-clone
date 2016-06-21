@@ -18,12 +18,14 @@
 
 #poweredGoogle .device-grid {
 	display: flex;
+	overflow: hidden;
 }
 
 #poweredGoogle .device-grid .left,
 #poweredGoogle .device-grid .right {
 	width: 50%;
 	padding-top: 30px;
+	margin-top: 20px;
 	padding-bottom: 10px;
 	display: flex;
 	flex-direction: column;
