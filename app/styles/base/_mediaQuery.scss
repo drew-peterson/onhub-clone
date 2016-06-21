@@ -4,7 +4,13 @@
 
 
 $tablet-width: 768px;
-$desktop-width: 1024px; 
+$desktop-width: 1024px;
+
+@mixin large-phone {
+  @media (min-width: 425px) {
+    @content;
+  }
+} 
 
 @mixin tablet {
   @media (min-width: $tablet-width)  {
