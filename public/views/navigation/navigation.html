@@ -1,0 +1,44 @@
+<div id="navBar">
+
+	<!-- desktop + tablet -->
+	<nav class="desktop">
+		<ul>
+			<i class="material-icons hamburger"
+				ng-if="!navCtrl.opened"
+				ng-click="navCtrl.toggle()"
+				>&#xE5D2;
+			</i>
+
+			<i class="material-icons hamburger"
+				ng-if="navCtrl.opened"
+				ng-click="navCtrl.toggle()"
+			>&#xE5CD;</i>
+
+			<!-- desktop Nav Links -->
+			<li class="link"> <a href="#" ng-click="navCtrl.close()">Features</a> </li>
+			<li class="link"> <a href="#" ng-click="navCtrl.close()">App</a> </li>
+			<li class="link"> <a href="#" ng-click="navCtrl.close()">Support</a> </li>
+			<li class="link"> <a href="#" ng-click="navCtrl.close()">Blog</a> </li>
+
+
+			<img src="https://on.google.com/hub/static/images/onhub_logo.svg" alt="" class="logo">
+
+			<li class="buy-btn">
+				<p>buy now</p>
+				<p class="small">from google store</p>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- mobile -->
+	<nav class="mobile">
+		<ul>
+			<li class="link"> <a href="#" ng-click="navCtrl.close()">Features</a> </li>
+			<li class="link"> <a href="#" ng-click="navCtrl.close()">App</a> </li>
+			<li class="link"> <a href="#" ng-click="navCtrl.close()">Support</a> </li>
+			<li class="link"> <a href="#" ng-click="navCtrl.close()">Blog</a> </li>
+		</ul>
+	</nav>
+
+
+</div>

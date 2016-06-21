@@ -1,0 +1,23 @@
+{
+  "name": "potato-quick-assignment",
+  "description": "quick assignment",
+  "main": "server.js",
+  "authors": [
+    "weeznog <drew.m.peterson@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-animate": "~1.4.8",
+    "jquery": "^3.0.0"
+  }
+}

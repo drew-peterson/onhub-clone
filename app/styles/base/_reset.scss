@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body, html { 
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: sans-serif; 
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; 
+}
+
+ul, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a { text-decoration: none;}

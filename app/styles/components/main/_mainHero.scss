@@ -1,0 +1,21 @@
+.header-hero {
+	img {
+		width: 100%;
+	}
+}
+
+.header-hero .partial-hero {
+	padding: 40px 20px;
+}
+
+.content-hero {
+	text-align: center;
+}
+
+.header-hero .content-hero {
+	.title, .sub-title {
+		font-size: 32px;
+		line-height: 40px;
+		color: #21abf1;
+	}
+}
