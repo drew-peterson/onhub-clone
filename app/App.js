@@ -11,7 +11,7 @@ angular.module('myApp',['ui.router', 'MainCtrl', 'ngAnimate', 'NavBar'])
 			templateUrl: '../views/main.html',
 			controller: 'MainCtrl',
 			controllerAs: 'MC' 
-		}) 
+		})  
 
     // GoogleBot SEO
     $locationProvider.html5Mode(true);

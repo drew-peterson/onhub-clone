@@ -1,0 +1,82 @@
+
+#quote-carousel {
+	position: relative;
+}
+
+#quote-carousel .divider {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#quote-carousel .quote-icon {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	color: #21abf1;
+	font-size: 150px;
+	text-align: center;
+}
+
+#quote-carousel .quote-container {
+	padding-top: 110px;
+}
+
+#quote-carousel .title {
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	color: #868686;
+}
+
+#quote-carousel .sub-title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #03A9F4;
+	padding: 10px 0;
+}
+
+#quote-carousel .quote-selector {
+	position: relative;
+	margin-top: 20px;
+
+	.divider {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.companies {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.company {
+		width: 20%;
+		height: 100px;
+		position: relative;
+		text-align: center;
+		padding-top: 20px;
+
+		&.selected {
+			background-image: url('https://on.google.com/hub/static/images/v2/selected-award-shadow.png');
+			background-size: 100% 100%;
+			background-position: top;
+			background-repeat: no-repeat;
+			height: 100px;
+
+			// arrow
+			&::before {
+				content: '';
+				width: 0; 
+				height: 0; 
+				border-left: 13px solid transparent;
+				border-right: 13px solid transparent;
+				border-bottom: 13px solid #b7b7b7;
+
+				position: absolute;
+				top: -13px;
+				left: 25%;
+			}
+		}
+	}
+}
