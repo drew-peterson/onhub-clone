@@ -21,6 +21,14 @@
 
 #quote-carousel .quote-container {
 	padding-top: 110px;
+	transition: all 0.35s ease-in-out;
+
+	&.show-add{
+		opacity: 0;
+	}
+	&.show-add.show-add-active {
+		opacity: 1;
+	}
 }
 
 #quote-carousel .title {
@@ -29,20 +37,6 @@
 	text-align: center;
 	color: #868686;
 	height: 90px;
-	transition: opacity 0.35s ease-in-out;
-
-	&.ng-enter {
-		opacity: 0;
-	}
-	&.ng-enter-active {
-		opacity: 1;
-	}
-	&.ng-leave {
-		opacity: 1;
-	}
-	&.ng-leave-active {
-		opacity: 0;
-	}
 }
 
 #quote-carousel .sub-title {

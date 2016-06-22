@@ -18,15 +18,17 @@ angular.module('MainCtrl')
 				{title: "The best wireless networking my home as ever seen.", subTitle: "wall street journal"},
 				{title: "Coverage and throughput are shockingly good.", subTitle: "the verge"}
 			];
-
-			QC.awardCo = ['A', 'B', 'C', 'D', 'E', 'F'];
 		},
 		link: function(scope,elem, attrs, QC){
 
 			var max = QC.awards.length;
 			var company = $('#quote-carousel .company');
+			var container = $('#quote-carousel .quote-container');
 
-			(function myLoop (i) { 
+			(function myLoop (i) {
+				
+				$animate.addClass(container, 'show');
+
 				if(i === max){ i = 0;}
 
 				company.removeClass('selected');
@@ -35,7 +37,9 @@ angular.module('MainCtrl')
 				QC.title = QC.awards[i].title;
 				QC.subTitle = QC.awards[i].subTitle;
 
+
 				$timeout(function () {   
+					$(container).removeClass('show');
 					if (++i) myLoop(i);   
 				}, 4000)
 			})(0); 
