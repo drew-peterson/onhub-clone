@@ -1,6 +1,7 @@
 
 #quote-carousel {
 	position: relative;
+	padding: 0px 20px;
 }
 
 #quote-carousel .divider {
@@ -11,6 +12,7 @@
 #quote-carousel .quote-icon {
 	position: absolute;
 	top: 0;
+	left: 0;
 	width: 100%;
 	color: #21abf1;
 	font-size: 150px;
@@ -26,6 +28,21 @@
 	line-height: 30px;
 	text-align: center;
 	color: #868686;
+	height: 90px;
+	transition: opacity 0.35s ease-in-out;
+
+	&.ng-enter {
+		opacity: 0;
+	}
+	&.ng-enter-active {
+		opacity: 1;
+	}
+	&.ng-leave {
+		opacity: 1;
+	}
+	&.ng-leave-active {
+		opacity: 0;
+	}
 }
 
 #quote-carousel .sub-title {
@@ -37,7 +54,7 @@
 
 #quote-carousel .quote-selector {
 	position: relative;
-	margin-top: 20px;
+	margin: 20px 0;
 
 	.divider {
 		position: absolute;
@@ -51,7 +68,7 @@
 	}
 
 	.company {
-		width: 20%;
+		width: 16.666667%;
 		height: 100px;
 		position: relative;
 		text-align: center;
@@ -75,7 +92,7 @@
 
 				position: absolute;
 				top: -13px;
-				left: 25%;
+				left: 30%;
 			}
 		}
 	}
