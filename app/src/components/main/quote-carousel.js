@@ -23,11 +23,14 @@ angular.module('MainCtrl')
 
 			var max = QC.awards.length;
 			var company = $('#quote-carousel .company');
-			var container = $('#quote-carousel .quote-container');
+
+			var title = $('#quote-carousel .quote-container .title');
+			var subTitle = $('#quote-carousel .quote-container .sub-title');
 
 			(function myLoop (i) {
 				
-				$animate.addClass(container, 'show');
+				$animate.addClass(title, 'show');
+				$animate.addClass(subTitle, 'show');
 
 				if(i === max){ i = 0;}
 
@@ -39,7 +42,8 @@ angular.module('MainCtrl')
 
 
 				$timeout(function () {   
-					$(container).removeClass('show');
+					$animate.removeClass(title, 'show');
+					$animate.removeClass(subTitle, 'show');
 					if (++i) myLoop(i);   
 				}, 4000)
 			})(0); 
