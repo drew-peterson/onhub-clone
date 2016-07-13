@@ -1,21 +1,48 @@
 .header-hero {
+	position: relative;
 	img {
 		width: 100%;
 	}
-}
-
-.header-hero .partial-hero {
-	padding: 40px 20px;
 }
 
 .content-hero {
 	text-align: center;
 }
 
+// content -===
 .header-hero .content-hero {
+	padding: 40px 20px;
+
+	@include desktop {
+		position: absolute;
+		top: 16%;
+		left: 0;
+		width: 40%;
+		padding: 0;
+		padding-left: 3%;
+	}
+
 	.title, .sub-title {
 		font-size: 32px;
 		line-height: 40px;
 		color: #21abf1;
+
+		@include desktop {
+			font-size: 38px;
+			line-height: 42px;
+		}
 	}
+
+	.content {
+		line-height: 24px;
+		@include desktop {
+			margin: 20px auto;
+			color: #868686;
+		}
+	}
+}
+
+.header-hero .closer-look {
+	color: #21abf1;
+	text-transform: uppercase;
 }
