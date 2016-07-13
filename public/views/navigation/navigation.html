@@ -2,32 +2,39 @@
 
 	<!-- desktop + tablet -->
 	<nav class="desktop">
-		<ul>
-			<i class="material-icons hamburger"
-				ng-if="!navCtrl.opened"
-				ng-click="navCtrl.toggle()"
-				>&#xE5D2;
-			</i>
+		<!-- open -->
+		<i class="material-icons hamburger"
+			ng-if="!navCtrl.opened"
+			ng-click="navCtrl.toggle()"
+			>&#xE5D2;
+		</i>
 
-			<i class="material-icons hamburger"
-				ng-if="navCtrl.opened"
-				ng-click="navCtrl.toggle()"
-			>&#xE5CD;</i>
-
-			<!-- desktop Nav Links -->
-			<li class="link"> <a href="#" ng-click="navCtrl.close()">Features</a> </li>
-			<li class="link"> <a href="#" ng-click="navCtrl.close()">App</a> </li>
-			<li class="link"> <a href="#" ng-click="navCtrl.close()">Support</a> </li>
-			<li class="link"> <a href="#" ng-click="navCtrl.close()">Blog</a> </li>
+		<!-- close -->
+		<i class="material-icons hamburger"
+			ng-if="navCtrl.opened"
+			ng-click="navCtrl.toggle()"
+		>&#xE5CD;</i>
 
 
-			<img src="https://on.google.com/hub/static/images/onhub_logo.svg" alt="" class="logo">
+		<!-- desktop Nav Links -->
 
+		<div class="desktop-group">
+			<!-- logo -->
+			<img class="logo" src="https://on.google.com/hub/static/images/onhub_logo.svg" alt="" >
+
+			<!-- links -->
+			<ul class="link-wrap">
+				<li class="link"> <a href="#" ng-click="navCtrl.close()">Features</a> </li>
+				<li class="link"> <a href="#" ng-click="navCtrl.close()">App</a> </li>
+				<li class="link"> <a href="#" ng-click="navCtrl.close()">Support</a> </li>
+				<li class="link"> <a href="#" ng-click="navCtrl.close()">Blog</a> </li>
+			</ul>
+			<!-- buy btn -->
 			<li class="buy-btn">
 				<p>buy now</p>
-				<p class="small">from google store</p>
+				<p class="small">from Amazon</p>
 			</li>
-		</ul>
+		</div>
 	</nav>
 
 	<!-- mobile -->
