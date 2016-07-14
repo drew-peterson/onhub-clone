@@ -5,7 +5,20 @@
 
 #main {
   padding-bottom: 40px;
+  background-color: white;
 }
+
+body {
+  margin: 0 auto;
+  max-width: 1680px;
+  background: #efefef;
+}
+
+// color ======================
+$gray: #868686;
+$blue: #21abf1;
+$light-gray: #f5f5f5;
+
 
 
 // overlay ===========================================

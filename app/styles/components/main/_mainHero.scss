@@ -38,9 +38,7 @@
 		line-height: 24px;
 		margin: 20px auto;
 		color: #868686;
-		@include desktop {
-			color: #868686;
-		}
+		max-width: 430px;
 	}
 }
 
