@@ -26,6 +26,7 @@
 		font-size: 32px;
 		line-height: 40px;
 		color: #21abf1;
+		font-weight: 400;
 
 		@include desktop {
 			font-size: 38px;
@@ -35,8 +36,9 @@
 
 	.content {
 		line-height: 24px;
+		margin: 20px auto;
+		color: #868686;
 		@include desktop {
-			margin: 20px auto;
 			color: #868686;
 		}
 	}

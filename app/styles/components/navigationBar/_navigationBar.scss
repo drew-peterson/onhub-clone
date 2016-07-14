@@ -8,6 +8,10 @@
 	transition: all 0.35s ease-in-out;
 	z-index: 100;
 
+	@include desktop {
+		padding: 18px 30px;
+	}
+
 	&.opened {
 		box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 		background-color: white;
@@ -53,6 +57,9 @@
 		height: 34px;
 		width: 81px;
 		max-width: 100%;
+		@include desktop {
+			width: 110px;
+		}
 	}
 
 	.link-wrap {
@@ -64,10 +71,11 @@
 		}
 
 		.link {
-			color: #646466;
 			a {
+				color: #646466;
 				padding: 15px 25px 13px;
 				display: inline-block;
+				text-transform: uppercase;
 			}
 		}
 	}
